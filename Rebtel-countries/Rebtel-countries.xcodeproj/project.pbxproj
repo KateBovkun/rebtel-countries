@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		440DEEEB28BCE07E002988FD /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF873E28B79D7600C01696 /* DataLoader.swift */; };
+		440DEEED28BCE089002988FD /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440DEEEC28BCE089002988FD /* ImageLoader.swift */; };
+		4472E9D628B8DFC100BEE4C1 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9D528B8DFC100BEE4C1 /* Factories.swift */; };
+		4472E9D728B8DFC100BEE4C1 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9D528B8DFC100BEE4C1 /* Factories.swift */; };
+		4472E9DE28B8E27500BEE4C1 /* CountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9DD28B8E27500BEE4C1 /* CountryResponse.swift */; };
+		4472E9DF28B8E27500BEE4C1 /* CountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9DD28B8E27500BEE4C1 /* CountryResponse.swift */; };
+		4472E9E228B8E79600BEE4C1 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9E128B8E79600BEE4C1 /* Vertex.swift */; };
+		4472E9E328B8E79600BEE4C1 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9E128B8E79600BEE4C1 /* Vertex.swift */; };
+		4472E9E528B8E7BA00BEE4C1 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9E428B8E7BA00BEE4C1 /* Edge.swift */; };
+		4472E9E628B8E7BA00BEE4C1 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9E428B8E7BA00BEE4C1 /* Edge.swift */; };
+		4472E9E828B8E83900BEE4C1 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9E728B8E83900BEE4C1 /* Graph.swift */; };
+		4472E9E928B8E83900BEE4C1 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9E728B8E83900BEE4C1 /* Graph.swift */; };
+		4472E9EB28B8E91000BEE4C1 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9EA28B8E91000BEE4C1 /* AdjacencyList.swift */; };
+		4472E9EC28B8E91000BEE4C1 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9EA28B8E91000BEE4C1 /* AdjacencyList.swift */; };
+		4472E9EE28B8EACD00BEE4C1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9ED28B8EACD00BEE4C1 /* Country.swift */; };
+		4472E9EF28B8EACD00BEE4C1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9ED28B8EACD00BEE4C1 /* Country.swift */; };
+		4472E9F428B8EFC300BEE4C1 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9F328B8EFC300BEE4C1 /* Endpoints.swift */; };
+		4472E9F528B8EFC300BEE4C1 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9F328B8EFC300BEE4C1 /* Endpoints.swift */; };
+		4472E9F728B8F22300BEE4C1 /* GraphBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9F628B8F22300BEE4C1 /* GraphBuilder.swift */; };
+		4472E9F828B8F22300BEE4C1 /* GraphBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9F628B8F22300BEE4C1 /* GraphBuilder.swift */; };
+		4472E9FA28B906F000BEE4C1 /* CountriesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9F928B906F000BEE4C1 /* CountriesLoader.swift */; };
+		4472E9FB28B906F000BEE4C1 /* CountriesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9F928B906F000BEE4C1 /* CountriesLoader.swift */; };
+		4472E9FD28B9092A00BEE4C1 /* RandomCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9FC28B9092A00BEE4C1 /* RandomCountryViewModel.swift */; };
+		4472E9FE28B9092A00BEE4C1 /* RandomCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9FC28B9092A00BEE4C1 /* RandomCountryViewModel.swift */; };
+		4472EA0028B90B3700BEE4C1 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9FF28B90B3700BEE4C1 /* CountryViewModel.swift */; };
+		4472EA0128B90B3700BEE4C1 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9FF28B90B3700BEE4C1 /* CountryViewModel.swift */; };
+		4472EA0328BCA3F000BEE4C1 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0228BCA3F000BEE4C1 /* Strings.swift */; };
+		4472EA0428BCA3F000BEE4C1 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0228BCA3F000BEE4C1 /* Strings.swift */; };
+		4472EA0628BCB80500BEE4C1 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0528BCB80500BEE4C1 /* DependencyContainer.swift */; };
+		4472EA0728BCB80500BEE4C1 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0528BCB80500BEE4C1 /* DependencyContainer.swift */; };
+		4472EA0928BCBA2B00BEE4C1 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0828BCBA2B00BEE4C1 /* CountryViewController.swift */; };
+		4472EA0A28BCBA2B00BEE4C1 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0828BCBA2B00BEE4C1 /* CountryViewController.swift */; };
+		44EDB4A128BCFE23001F8E14 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440DEEEC28BCE089002988FD /* ImageLoader.swift */; };
+		44FF870B28B79D1200C01696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF870A28B79D1200C01696 /* AppDelegate.swift */; };
+		44FF870D28B79D1200C01696 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF870C28B79D1200C01696 /* SceneDelegate.swift */; };
+		44FF870F28B79D1200C01696 /* RandomCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF870E28B79D1200C01696 /* RandomCountryViewController.swift */; };
+		44FF871228B79D1200C01696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FF871028B79D1200C01696 /* Main.storyboard */; };
+		44FF871528B79D1200C01696 /* Rebtel_countries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44FF871328B79D1200C01696 /* Rebtel_countries.xcdatamodeld */; };
+		44FF871728B79D1800C01696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FF871628B79D1800C01696 /* Assets.xcassets */; };
+		44FF871A28B79D1800C01696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FF871828B79D1800C01696 /* LaunchScreen.storyboard */; };
+		44FF872528B79D1800C01696 /* Rebtel_countriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF872428B79D1800C01696 /* Rebtel_countriesTests.swift */; };
+		44FF872F28B79D1800C01696 /* Rebtel_countriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF872E28B79D1800C01696 /* Rebtel_countriesUITests.swift */; };
+		44FF873128B79D1800C01696 /* Rebtel_countriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF873028B79D1800C01696 /* Rebtel_countriesUITestsLaunchTests.swift */; };
+		44FF873F28B79D7600C01696 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF873E28B79D7600C01696 /* DataLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44FF872128B79D1800C01696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44FF86FF28B79D1200C01696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44FF870628B79D1200C01696;
+			remoteInfo = "Rebtel-countries";
+		};
+		44FF872B28B79D1800C01696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44FF86FF28B79D1200C01696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44FF870628B79D1200C01696;
+			remoteInfo = "Rebtel-countries";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		440DEEEC28BCE089002988FD /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		4472E9D528B8DFC100BEE4C1 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		4472E9DD28B8E27500BEE4C1 /* CountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryResponse.swift; sourceTree = "<group>"; };
+		4472E9E128B8E79600BEE4C1 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		4472E9E428B8E7BA00BEE4C1 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		4472E9E728B8E83900BEE4C1 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		4472E9EA28B8E91000BEE4C1 /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
+		4472E9ED28B8EACD00BEE4C1 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		4472E9F328B8EFC300BEE4C1 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		4472E9F628B8F22300BEE4C1 /* GraphBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphBuilder.swift; sourceTree = "<group>"; };
+		4472E9F928B906F000BEE4C1 /* CountriesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesLoader.swift; sourceTree = "<group>"; };
+		4472E9FC28B9092A00BEE4C1 /* RandomCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCountryViewModel.swift; sourceTree = "<group>"; };
+		4472E9FF28B90B3700BEE4C1 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		4472EA0228BCA3F000BEE4C1 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		4472EA0528BCB80500BEE4C1 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		4472EA0828BCBA2B00BEE4C1 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		44FF870728B79D1200C01696 /* Rebtel-countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rebtel-countries.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FF870A28B79D1200C01696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44FF870C28B79D1200C01696 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44FF870E28B79D1200C01696 /* RandomCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCountryViewController.swift; sourceTree = "<group>"; };
+		44FF871128B79D1200C01696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44FF871428B79D1200C01696 /* Rebtel_countries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rebtel_countries.xcdatamodel; sourceTree = "<group>"; };
+		44FF871628B79D1800C01696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44FF871928B79D1800C01696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44FF871B28B79D1800C01696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FF872028B79D1800C01696 /* Rebtel-countriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rebtel-countriesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FF872428B79D1800C01696 /* Rebtel_countriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rebtel_countriesTests.swift; sourceTree = "<group>"; };
+		44FF872A28B79D1800C01696 /* Rebtel-countriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rebtel-countriesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FF872E28B79D1800C01696 /* Rebtel_countriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rebtel_countriesUITests.swift; sourceTree = "<group>"; };
+		44FF873028B79D1800C01696 /* Rebtel_countriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rebtel_countriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44FF873E28B79D7600C01696 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44FF870428B79D1200C01696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44FF871D28B79D1800C01696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44FF872728B79D1800C01696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		440DEEEA28BCE071002988FD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4472E9F928B906F000BEE4C1 /* CountriesLoader.swift */,
+				44FF873E28B79D7600C01696 /* DataLoader.swift */,
+				440DEEEC28BCE089002988FD /* ImageLoader.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4472E9D828B8E23500BEE4C1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4472E9D928B8E23E00BEE4C1 /* Responses */,
+				4472E9ED28B8EACD00BEE4C1 /* Country.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4472E9D928B8E23E00BEE4C1 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				4472E9DD28B8E27500BEE4C1 /* CountryResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		4472E9E028B8E77C00BEE4C1 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				4472E9E128B8E79600BEE4C1 /* Vertex.swift */,
+				4472E9E428B8E7BA00BEE4C1 /* Edge.swift */,
+				4472E9E728B8E83900BEE4C1 /* Graph.swift */,
+				4472E9EA28B8E91000BEE4C1 /* AdjacencyList.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		4472EA0D28BCC10E00BEE4C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44FF870E28B79D1200C01696 /* RandomCountryViewController.swift */,
+				4472E9FC28B9092A00BEE4C1 /* RandomCountryViewModel.swift */,
+				4472E9FF28B90B3700BEE4C1 /* CountryViewModel.swift */,
+				4472EA0828BCBA2B00BEE4C1 /* CountryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44FF86FE28B79D1200C01696 = {
+			isa = PBXGroup;
+			children = (
+				44FF870928B79D1200C01696 /* Rebtel-countries */,
+				44FF872328B79D1800C01696 /* Rebtel-countriesTests */,
+				44FF872D28B79D1800C01696 /* Rebtel-countriesUITests */,
+				44FF870828B79D1200C01696 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44FF870828B79D1200C01696 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44FF870728B79D1200C01696 /* Rebtel-countries.app */,
+				44FF872028B79D1800C01696 /* Rebtel-countriesTests.xctest */,
+				44FF872A28B79D1800C01696 /* Rebtel-countriesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44FF870928B79D1200C01696 /* Rebtel-countries */ = {
+			isa = PBXGroup;
+			children = (
+				4472E9E028B8E77C00BEE4C1 /* Graph */,
+				4472E9D828B8E23500BEE4C1 /* Data */,
+				44FF873D28B79D5D00C01696 /* Services */,
+				44FF870A28B79D1200C01696 /* AppDelegate.swift */,
+				4472EA0D28BCC10E00BEE4C1 /* View */,
+				44FF870C28B79D1200C01696 /* SceneDelegate.swift */,
+				44FF871028B79D1200C01696 /* Main.storyboard */,
+				44FF871B28B79D1800C01696 /* Info.plist */,
+				44FF871628B79D1800C01696 /* Assets.xcassets */,
+				44FF871828B79D1800C01696 /* LaunchScreen.storyboard */,
+				44FF871328B79D1200C01696 /* Rebtel_countries.xcdatamodeld */,
+			);
+			path = "Rebtel-countries";
+			sourceTree = "<group>";
+		};
+		44FF872328B79D1800C01696 /* Rebtel-countriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				44FF872428B79D1800C01696 /* Rebtel_countriesTests.swift */,
+			);
+			path = "Rebtel-countriesTests";
+			sourceTree = "<group>";
+		};
+		44FF872D28B79D1800C01696 /* Rebtel-countriesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44FF872E28B79D1800C01696 /* Rebtel_countriesUITests.swift */,
+				44FF873028B79D1800C01696 /* Rebtel_countriesUITestsLaunchTests.swift */,
+			);
+			path = "Rebtel-countriesUITests";
+			sourceTree = "<group>";
+		};
+		44FF873D28B79D5D00C01696 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				440DEEEA28BCE071002988FD /* Network */,
+				4472E9D528B8DFC100BEE4C1 /* Factories.swift */,
+				4472E9F328B8EFC300BEE4C1 /* Endpoints.swift */,
+				4472E9F628B8F22300BEE4C1 /* GraphBuilder.swift */,
+				4472EA0528BCB80500BEE4C1 /* DependencyContainer.swift */,
+				4472EA0228BCA3F000BEE4C1 /* Strings.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44FF870628B79D1200C01696 /* Rebtel-countries */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44FF873428B79D1800C01696 /* Build configuration list for PBXNativeTarget "Rebtel-countries" */;
+			buildPhases = (
+				44FF870328B79D1200C01696 /* Sources */,
+				44FF870428B79D1200C01696 /* Frameworks */,
+				44FF870528B79D1200C01696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rebtel-countries";
+			productName = "Rebtel-countries";
+			productReference = 44FF870728B79D1200C01696 /* Rebtel-countries.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44FF871F28B79D1800C01696 /* Rebtel-countriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44FF873728B79D1800C01696 /* Build configuration list for PBXNativeTarget "Rebtel-countriesTests" */;
+			buildPhases = (
+				44FF871C28B79D1800C01696 /* Sources */,
+				44FF871D28B79D1800C01696 /* Frameworks */,
+				44FF871E28B79D1800C01696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44FF872228B79D1800C01696 /* PBXTargetDependency */,
+			);
+			name = "Rebtel-countriesTests";
+			productName = "Rebtel-countriesTests";
+			productReference = 44FF872028B79D1800C01696 /* Rebtel-countriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44FF872928B79D1800C01696 /* Rebtel-countriesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44FF873A28B79D1800C01696 /* Build configuration list for PBXNativeTarget "Rebtel-countriesUITests" */;
+			buildPhases = (
+				44FF872628B79D1800C01696 /* Sources */,
+				44FF872728B79D1800C01696 /* Frameworks */,
+				44FF872828B79D1800C01696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44FF872C28B79D1800C01696 /* PBXTargetDependency */,
+			);
+			name = "Rebtel-countriesUITests";
+			productName = "Rebtel-countriesUITests";
+			productReference = 44FF872A28B79D1800C01696 /* Rebtel-countriesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44FF86FF28B79D1200C01696 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					44FF870628B79D1200C01696 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					44FF871F28B79D1800C01696 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 44FF870628B79D1200C01696;
+					};
+					44FF872928B79D1800C01696 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 44FF870628B79D1200C01696;
+					};
+				};
+			};
+			buildConfigurationList = 44FF870228B79D1200C01696 /* Build configuration list for PBXProject "Rebtel-countries" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44FF86FE28B79D1200C01696;
+			productRefGroup = 44FF870828B79D1200C01696 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44FF870628B79D1200C01696 /* Rebtel-countries */,
+				44FF871F28B79D1800C01696 /* Rebtel-countriesTests */,
+				44FF872928B79D1800C01696 /* Rebtel-countriesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44FF870528B79D1200C01696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44FF871A28B79D1800C01696 /* LaunchScreen.storyboard in Resources */,
+				44FF871728B79D1800C01696 /* Assets.xcassets in Resources */,
+				44FF871228B79D1200C01696 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44FF871E28B79D1800C01696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44FF872828B79D1800C01696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44FF870328B79D1200C01696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4472E9EB28B8E91000BEE4C1 /* AdjacencyList.swift in Sources */,
+				4472E9D628B8DFC100BEE4C1 /* Factories.swift in Sources */,
+				4472EA0028B90B3700BEE4C1 /* CountryViewModel.swift in Sources */,
+				4472E9E228B8E79600BEE4C1 /* Vertex.swift in Sources */,
+				4472EA0328BCA3F000BEE4C1 /* Strings.swift in Sources */,
+				4472EA0628BCB80500BEE4C1 /* DependencyContainer.swift in Sources */,
+				44FF870F28B79D1200C01696 /* RandomCountryViewController.swift in Sources */,
+				4472E9DE28B8E27500BEE4C1 /* CountryResponse.swift in Sources */,
+				44FF870B28B79D1200C01696 /* AppDelegate.swift in Sources */,
+				44FF873F28B79D7600C01696 /* DataLoader.swift in Sources */,
+				4472E9E828B8E83900BEE4C1 /* Graph.swift in Sources */,
+				44FF871528B79D1200C01696 /* Rebtel_countries.xcdatamodeld in Sources */,
+				4472E9F428B8EFC300BEE4C1 /* Endpoints.swift in Sources */,
+				4472E9FA28B906F000BEE4C1 /* CountriesLoader.swift in Sources */,
+				4472E9E528B8E7BA00BEE4C1 /* Edge.swift in Sources */,
+				440DEEED28BCE089002988FD /* ImageLoader.swift in Sources */,
+				44FF870D28B79D1200C01696 /* SceneDelegate.swift in Sources */,
+				4472E9FD28B9092A00BEE4C1 /* RandomCountryViewModel.swift in Sources */,
+				4472EA0928BCBA2B00BEE4C1 /* CountryViewController.swift in Sources */,
+				4472E9F728B8F22300BEE4C1 /* GraphBuilder.swift in Sources */,
+				4472E9EE28B8EACD00BEE4C1 /* Country.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44FF871C28B79D1800C01696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4472E9FE28B9092A00BEE4C1 /* RandomCountryViewModel.swift in Sources */,
+				4472E9F828B8F22300BEE4C1 /* GraphBuilder.swift in Sources */,
+				4472E9D728B8DFC100BEE4C1 /* Factories.swift in Sources */,
+				44FF872528B79D1800C01696 /* Rebtel_countriesTests.swift in Sources */,
+				4472E9FB28B906F000BEE4C1 /* CountriesLoader.swift in Sources */,
+				4472EA0128B90B3700BEE4C1 /* CountryViewModel.swift in Sources */,
+				4472EA0728BCB80500BEE4C1 /* DependencyContainer.swift in Sources */,
+				4472E9E928B8E83900BEE4C1 /* Graph.swift in Sources */,
+				440DEEEB28BCE07E002988FD /* DataLoader.swift in Sources */,
+				44EDB4A128BCFE23001F8E14 /* ImageLoader.swift in Sources */,
+				4472EA0428BCA3F000BEE4C1 /* Strings.swift in Sources */,
+				4472E9E628B8E7BA00BEE4C1 /* Edge.swift in Sources */,
+				4472E9F528B8EFC300BEE4C1 /* Endpoints.swift in Sources */,
+				4472E9EC28B8E91000BEE4C1 /* AdjacencyList.swift in Sources */,
+				4472E9EF28B8EACD00BEE4C1 /* Country.swift in Sources */,
+				4472E9E328B8E79600BEE4C1 /* Vertex.swift in Sources */,
+				4472EA0A28BCBA2B00BEE4C1 /* CountryViewController.swift in Sources */,
+				4472E9DF28B8E27500BEE4C1 /* CountryResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44FF872628B79D1800C01696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44FF872F28B79D1800C01696 /* Rebtel_countriesUITests.swift in Sources */,
+				44FF873128B79D1800C01696 /* Rebtel_countriesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44FF872228B79D1800C01696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44FF870628B79D1200C01696 /* Rebtel-countries */;
+			targetProxy = 44FF872128B79D1800C01696 /* PBXContainerItemProxy */;
+		};
+		44FF872C28B79D1800C01696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44FF870628B79D1200C01696 /* Rebtel-countries */;
+			targetProxy = 44FF872B28B79D1800C01696 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44FF871028B79D1200C01696 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44FF871128B79D1200C01696 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44FF871828B79D1800C01696 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44FF871928B79D1800C01696 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44FF873228B79D1800C01696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44FF873328B79D1800C01696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44FF873528B79D1800C01696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T5PYUQ25N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rebtel-countries/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuluteam.Rebtel-countries";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		44FF873628B79D1800C01696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T5PYUQ25N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rebtel-countries/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuluteam.Rebtel-countries";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		44FF873828B79D1800C01696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T5PYUQ25N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuluteam.Rebtel-countriesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rebtel-countries.app/Rebtel-countries";
+			};
+			name = Debug;
+		};
+		44FF873928B79D1800C01696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T5PYUQ25N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuluteam.Rebtel-countriesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rebtel-countries.app/Rebtel-countries";
+			};
+			name = Release;
+		};
+		44FF873B28B79D1800C01696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T5PYUQ25N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuluteam.Rebtel-countriesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rebtel-countries";
+			};
+			name = Debug;
+		};
+		44FF873C28B79D1800C01696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T5PYUQ25N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuluteam.Rebtel-countriesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rebtel-countries";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44FF870228B79D1200C01696 /* Build configuration list for PBXProject "Rebtel-countries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44FF873228B79D1800C01696 /* Debug */,
+				44FF873328B79D1800C01696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44FF873428B79D1800C01696 /* Build configuration list for PBXNativeTarget "Rebtel-countries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44FF873528B79D1800C01696 /* Debug */,
+				44FF873628B79D1800C01696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44FF873728B79D1800C01696 /* Build configuration list for PBXNativeTarget "Rebtel-countriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44FF873828B79D1800C01696 /* Debug */,
+				44FF873928B79D1800C01696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44FF873A28B79D1800C01696 /* Build configuration list for PBXNativeTarget "Rebtel-countriesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44FF873B28B79D1800C01696 /* Debug */,
+				44FF873C28B79D1800C01696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		44FF871328B79D1200C01696 /* Rebtel_countries.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				44FF871428B79D1200C01696 /* Rebtel_countries.xcdatamodel */,
+			);
+			currentVersion = 44FF871428B79D1200C01696 /* Rebtel_countries.xcdatamodel */;
+			path = Rebtel_countries.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 44FF86FF28B79D1200C01696 /* Project object */;
+}
