@@ -7,14 +7,9 @@
 
 import Foundation
 
-final class DependencyContainer {
+final class FactoriesContainer {}
 
-    private init() {}
-
-    static let shared = DependencyContainer()
-}
-
-extension DependencyContainer: JSONDecoderFactory {
+extension FactoriesContainer: JSONDecoderFactory {
     func makeDecoder() -> JSONDecoder {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -22,20 +17,20 @@ extension DependencyContainer: JSONDecoderFactory {
     }
 }
 
-extension DependencyContainer: DataLoaderFactory {
+extension FactoriesContainer: DataLoaderFactory {
     func makeDataLoader() -> DataLoaderProtocol {
-        return DataLoader(session: .shared, factory: self)
+        DataLoader(session: .shared, factory: self)
     }
 }
 
-extension DependencyContainer: GraphBuilderFactory {
+extension FactoriesContainer: GraphBuilderFactory {
     func makeGraphBuilder() -> GraphBuilderProtocol {
-        return GraphBuilder()
+        GraphBuilder()
     }
 }
 
-extension DependencyContainer: ImageLoaderFactory {
+extension FactoriesContainer: ImageLoaderFactory {
     func makeImageLoader(dataLoader: DataLoaderProtocol) -> ImageLoaderProtocol {
-        return ImageLoader(dataLoader: dataLoader)
+        ImageLoader(dataLoader: dataLoader)
     }
 }

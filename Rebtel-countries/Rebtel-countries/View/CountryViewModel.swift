@@ -21,7 +21,7 @@ final class CountryViewModel {
     private let imageLoader: ImageLoaderProtocol
 
     var countryName: String {
-        return country.data.name
+        country.data.name
     }
 
     init(graph: AdjacencyList<Country>,
@@ -48,16 +48,18 @@ final class CountryViewModel {
     }
 
     func borderName(at index: Int) throws -> String {
-        return try country(at: index).data.name
+        try country(at: index).data.name
     }
 
     func countryViewModel(at index: Int) throws -> CountryViewModel {
         let country = try country(at: index)
         let borders = self.countriesGraph.edges(from: country)
-        return CountryViewModel(graph: self.countriesGraph,
-                                country: country,
-                                borders: borders,
-                                imageLoader: self.imageLoader)
+        return CountryViewModel(
+            graph: self.countriesGraph,
+            country: country,
+            borders: borders,
+            imageLoader: self.imageLoader
+        )
     }
 
 // MARK: - Private

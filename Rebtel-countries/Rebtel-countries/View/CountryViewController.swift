@@ -8,11 +8,6 @@
 import Foundation
 import UIKit
 
-
-final class CountryBorderCell: UITableViewCell {
-    @IBOutlet var titleLabel: UILabel!
-}
-
 final class CountryViewController: UIViewController {
 
     @IBOutlet var flagImageView: UIImageView!
@@ -25,7 +20,6 @@ final class CountryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
 
         nameLabel.text = countryViewModel.countryName
         bordersLabel.text = Strings.Country.borders.rawValue
@@ -34,9 +28,11 @@ final class CountryViewController: UIViewController {
         self.bordersTableView.reloadData()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        bordersTableView.indexPathsForSelectedRows?.forEach {
+            bordersTableView.deselectRow(at: $0, animated: false)
+        }
     }
 
     private func loadFlagImage() {
@@ -53,7 +49,7 @@ final class CountryViewController: UIViewController {
 // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let cell = sender as? CountryBorderCell, segue.identifier == "NextCountry" {
+        if let cell = sender as? UITableViewCell, segue.identifier == "NextCountry" {
             let nextCountryViewModel: CountryViewModel = (try? countryViewModel.countryViewModel(at: cell.tag)) ?? countryViewModel
             (segue.destination as? CountryViewController)?.countryViewModel = nextCountryViewModel
         }
@@ -67,16 +63,16 @@ final class CountryViewController: UIViewController {
 extension CountryViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return countryViewModel.bordersCount()
+        countryViewModel.bordersCount()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath) as! CountryBorderCell
-        cell.titleLabel.text = try? countryViewModel.borderName(at: indexPath.row)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath)
+        cell.textLabel?.text = try? countryViewModel.borderName(at: indexPath.row)
         cell.tag = indexPath.row
         return cell
     }

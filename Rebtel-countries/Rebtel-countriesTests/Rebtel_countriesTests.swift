@@ -19,8 +19,8 @@ class Rebtel_countriesTests: XCTestCase {
     }
 
 
-    func testExample() throws {
-        let decoder = DependencyContainer.shared.makeDecoder()
+    func testDecoder() throws {
+        let decoder = FactoriesContainer().makeDecoder()
         let dict = [[
             "name":["common":"Finland"],
             "cca2":"FI",

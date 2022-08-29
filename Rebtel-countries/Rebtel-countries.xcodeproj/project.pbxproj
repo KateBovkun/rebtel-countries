@@ -35,8 +35,8 @@
 		4472EA0128B90B3700BEE4C1 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472E9FF28B90B3700BEE4C1 /* CountryViewModel.swift */; };
 		4472EA0328BCA3F000BEE4C1 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0228BCA3F000BEE4C1 /* Strings.swift */; };
 		4472EA0428BCA3F000BEE4C1 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0228BCA3F000BEE4C1 /* Strings.swift */; };
-		4472EA0628BCB80500BEE4C1 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0528BCB80500BEE4C1 /* DependencyContainer.swift */; };
-		4472EA0728BCB80500BEE4C1 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0528BCB80500BEE4C1 /* DependencyContainer.swift */; };
+		4472EA0628BCB80500BEE4C1 /* FactoriesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0528BCB80500BEE4C1 /* FactoriesContainer.swift */; };
+		4472EA0728BCB80500BEE4C1 /* FactoriesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0528BCB80500BEE4C1 /* FactoriesContainer.swift */; };
 		4472EA0928BCBA2B00BEE4C1 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0828BCBA2B00BEE4C1 /* CountryViewController.swift */; };
 		4472EA0A28BCBA2B00BEE4C1 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472EA0828BCBA2B00BEE4C1 /* CountryViewController.swift */; };
 		44EDB4A128BCFE23001F8E14 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440DEEEC28BCE089002988FD /* ImageLoader.swift */; };
@@ -48,20 +48,11 @@
 		44FF871728B79D1800C01696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FF871628B79D1800C01696 /* Assets.xcassets */; };
 		44FF871A28B79D1800C01696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FF871828B79D1800C01696 /* LaunchScreen.storyboard */; };
 		44FF872528B79D1800C01696 /* Rebtel_countriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF872428B79D1800C01696 /* Rebtel_countriesTests.swift */; };
-		44FF872F28B79D1800C01696 /* Rebtel_countriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF872E28B79D1800C01696 /* Rebtel_countriesUITests.swift */; };
-		44FF873128B79D1800C01696 /* Rebtel_countriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF873028B79D1800C01696 /* Rebtel_countriesUITestsLaunchTests.swift */; };
 		44FF873F28B79D7600C01696 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF873E28B79D7600C01696 /* DataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		44FF872128B79D1800C01696 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 44FF86FF28B79D1200C01696 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 44FF870628B79D1200C01696;
-			remoteInfo = "Rebtel-countries";
-		};
-		44FF872B28B79D1800C01696 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 44FF86FF28B79D1200C01696 /* Project object */;
 			proxyType = 1;
@@ -85,7 +76,7 @@
 		4472E9FC28B9092A00BEE4C1 /* RandomCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCountryViewModel.swift; sourceTree = "<group>"; };
 		4472E9FF28B90B3700BEE4C1 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
 		4472EA0228BCA3F000BEE4C1 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		4472EA0528BCB80500BEE4C1 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		4472EA0528BCB80500BEE4C1 /* FactoriesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoriesContainer.swift; sourceTree = "<group>"; };
 		4472EA0828BCBA2B00BEE4C1 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		44FF870728B79D1200C01696 /* Rebtel-countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rebtel-countries.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FF870A28B79D1200C01696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,9 +89,6 @@
 		44FF871B28B79D1800C01696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44FF872028B79D1800C01696 /* Rebtel-countriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rebtel-countriesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FF872428B79D1800C01696 /* Rebtel_countriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rebtel_countriesTests.swift; sourceTree = "<group>"; };
-		44FF872A28B79D1800C01696 /* Rebtel-countriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rebtel-countriesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44FF872E28B79D1800C01696 /* Rebtel_countriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rebtel_countriesUITests.swift; sourceTree = "<group>"; };
-		44FF873028B79D1800C01696 /* Rebtel_countriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rebtel_countriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		44FF873E28B79D7600C01696 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,13 +101,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		44FF871D28B79D1800C01696 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		44FF872728B79D1800C01696 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -172,8 +153,8 @@
 			children = (
 				44FF870E28B79D1200C01696 /* RandomCountryViewController.swift */,
 				4472E9FC28B9092A00BEE4C1 /* RandomCountryViewModel.swift */,
-				4472E9FF28B90B3700BEE4C1 /* CountryViewModel.swift */,
 				4472EA0828BCBA2B00BEE4C1 /* CountryViewController.swift */,
+				4472E9FF28B90B3700BEE4C1 /* CountryViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,7 +164,6 @@
 			children = (
 				44FF870928B79D1200C01696 /* Rebtel-countries */,
 				44FF872328B79D1800C01696 /* Rebtel-countriesTests */,
-				44FF872D28B79D1800C01696 /* Rebtel-countriesUITests */,
 				44FF870828B79D1200C01696 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -193,7 +173,6 @@
 			children = (
 				44FF870728B79D1200C01696 /* Rebtel-countries.app */,
 				44FF872028B79D1800C01696 /* Rebtel-countriesTests.xctest */,
-				44FF872A28B79D1800C01696 /* Rebtel-countriesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,15 +203,6 @@
 			path = "Rebtel-countriesTests";
 			sourceTree = "<group>";
 		};
-		44FF872D28B79D1800C01696 /* Rebtel-countriesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				44FF872E28B79D1800C01696 /* Rebtel_countriesUITests.swift */,
-				44FF873028B79D1800C01696 /* Rebtel_countriesUITestsLaunchTests.swift */,
-			);
-			path = "Rebtel-countriesUITests";
-			sourceTree = "<group>";
-		};
 		44FF873D28B79D5D00C01696 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +210,7 @@
 				4472E9D528B8DFC100BEE4C1 /* Factories.swift */,
 				4472E9F328B8EFC300BEE4C1 /* Endpoints.swift */,
 				4472E9F628B8F22300BEE4C1 /* GraphBuilder.swift */,
-				4472EA0528BCB80500BEE4C1 /* DependencyContainer.swift */,
+				4472EA0528BCB80500BEE4C1 /* FactoriesContainer.swift */,
 				4472EA0228BCA3F000BEE4C1 /* Strings.swift */,
 			);
 			path = Services;
@@ -284,24 +254,6 @@
 			productReference = 44FF872028B79D1800C01696 /* Rebtel-countriesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		44FF872928B79D1800C01696 /* Rebtel-countriesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 44FF873A28B79D1800C01696 /* Build configuration list for PBXNativeTarget "Rebtel-countriesUITests" */;
-			buildPhases = (
-				44FF872628B79D1800C01696 /* Sources */,
-				44FF872728B79D1800C01696 /* Frameworks */,
-				44FF872828B79D1800C01696 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				44FF872C28B79D1800C01696 /* PBXTargetDependency */,
-			);
-			name = "Rebtel-countriesUITests";
-			productName = "Rebtel-countriesUITests";
-			productReference = 44FF872A28B79D1800C01696 /* Rebtel-countriesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -316,10 +268,6 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					44FF871F28B79D1800C01696 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 44FF870628B79D1200C01696;
-					};
-					44FF872928B79D1800C01696 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 44FF870628B79D1200C01696;
 					};
@@ -340,7 +288,6 @@
 			targets = (
 				44FF870628B79D1200C01696 /* Rebtel-countries */,
 				44FF871F28B79D1800C01696 /* Rebtel-countriesTests */,
-				44FF872928B79D1800C01696 /* Rebtel-countriesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -363,13 +310,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44FF872828B79D1800C01696 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -382,7 +322,7 @@
 				4472EA0028B90B3700BEE4C1 /* CountryViewModel.swift in Sources */,
 				4472E9E228B8E79600BEE4C1 /* Vertex.swift in Sources */,
 				4472EA0328BCA3F000BEE4C1 /* Strings.swift in Sources */,
-				4472EA0628BCB80500BEE4C1 /* DependencyContainer.swift in Sources */,
+				4472EA0628BCB80500BEE4C1 /* FactoriesContainer.swift in Sources */,
 				44FF870F28B79D1200C01696 /* RandomCountryViewController.swift in Sources */,
 				4472E9DE28B8E27500BEE4C1 /* CountryResponse.swift in Sources */,
 				44FF870B28B79D1200C01696 /* AppDelegate.swift in Sources */,
@@ -411,7 +351,7 @@
 				44FF872528B79D1800C01696 /* Rebtel_countriesTests.swift in Sources */,
 				4472E9FB28B906F000BEE4C1 /* CountriesLoader.swift in Sources */,
 				4472EA0128B90B3700BEE4C1 /* CountryViewModel.swift in Sources */,
-				4472EA0728BCB80500BEE4C1 /* DependencyContainer.swift in Sources */,
+				4472EA0728BCB80500BEE4C1 /* FactoriesContainer.swift in Sources */,
 				4472E9E928B8E83900BEE4C1 /* Graph.swift in Sources */,
 				440DEEEB28BCE07E002988FD /* DataLoader.swift in Sources */,
 				44EDB4A128BCFE23001F8E14 /* ImageLoader.swift in Sources */,
@@ -426,15 +366,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44FF872628B79D1800C01696 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44FF872F28B79D1800C01696 /* Rebtel_countriesUITests.swift in Sources */,
-				44FF873128B79D1800C01696 /* Rebtel_countriesUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -442,11 +373,6 @@
 			isa = PBXTargetDependency;
 			target = 44FF870628B79D1200C01696 /* Rebtel-countries */;
 			targetProxy = 44FF872128B79D1800C01696 /* PBXContainerItemProxy */;
-		};
-		44FF872C28B79D1800C01696 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 44FF870628B79D1200C01696 /* Rebtel-countries */;
-			targetProxy = 44FF872B28B79D1800C01696 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -682,42 +608,6 @@
 			};
 			name = Release;
 		};
-		44FF873B28B79D1800C01696 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2T5PYUQ25N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zuluteam.Rebtel-countriesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Rebtel-countries";
-			};
-			name = Debug;
-		};
-		44FF873C28B79D1800C01696 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2T5PYUQ25N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zuluteam.Rebtel-countriesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Rebtel-countries";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -744,15 +634,6 @@
 			buildConfigurations = (
 				44FF873828B79D1800C01696 /* Debug */,
 				44FF873928B79D1800C01696 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		44FF873A28B79D1800C01696 /* Build configuration list for PBXNativeTarget "Rebtel-countriesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				44FF873B28B79D1800C01696 /* Debug */,
-				44FF873C28B79D1800C01696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

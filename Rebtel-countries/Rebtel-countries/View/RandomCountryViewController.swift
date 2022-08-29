@@ -7,46 +7,64 @@
 
 import UIKit
 
-class RandomCountryViewController: UIViewController {
+final class RandomCountryViewController: UIViewController {
 
     @IBOutlet var stepOneLabel: UILabel!
     @IBOutlet var stepTwoLabel: UILabel!
     @IBOutlet var stepThreeLabel: UILabel!
     @IBOutlet var gameButton: UIButton!
 
-    private lazy var dataLoader = DependencyContainer.shared.makeDataLoader()
+    private lazy var factoriesContainer = FactoriesContainer()
+    private lazy var dataLoader = factoriesContainer.makeDataLoader()
     private lazy var viewModel = RandomCountryViewModel(loader: CountriesLoader(
         dataLoader: self.dataLoader,
-        graphBuilder: DependencyContainer.shared.makeGraphBuilder()))
+        graphBuilder: factoriesContainer.makeGraphBuilder()))
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         stepOneLabel.text = Strings.GamePrep.stepOne.rawValue
         stepTwoLabel.text = Strings.GamePrep.stepTwo.rawValue
         stepThreeLabel.text = Strings.GamePrep.stepThree.rawValue
 
-        self.loadCountries()
+        loadCountries()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
+    @IBAction func gameButtonTap() {
+        switch viewModel.state {
+        case .loaded:
+            do {
+                let countryViewModel = try viewModel.getRandomCountryViewModel(with: factoriesContainer.makeImageLoader(dataLoader: self.dataLoader))
+                performSegue(withIdentifier: "ShowCountry", sender: countryViewModel)
+            } catch {
+                refreshButton()
+                showError(with: Strings.GamePrep.alertMessageNoCountry.rawValue)
+            }
+        case .error:
+            loadCountries()
+        case .initial, .loading:
+            refreshButton()
+        }
     }
+
+    // MARK: - Private
 
     private func loadCountries() {
+        self.refreshButton()
         Task { @MainActor in
             do {
-                gameButton.setTitle(Strings.GamePrep.buttonTitleLoading.rawValue, for: .normal)
-                gameButton.isEnabled = false
                 try await viewModel.loadCountries()
-                gameButton.isEnabled = true
-                gameButton.setTitle(Strings.GamePrep.buttonTitleGo.rawValue, for: .normal)
             } catch {
-                print(error)
                 self.showError(with: Strings.GamePrep.alertMessage.rawValue)
             }
+            self.refreshButton()
         }
+    }
+
+    private func refreshButton() {
+        let buttonOptions = self.viewModel.gameButtonOptions()
+        gameButton.setTitle(buttonOptions.title, for: .normal)
+        gameButton.isEnabled = buttonOptions.isEnabled
     }
 
     private func showError(with message: String) {
@@ -55,23 +73,7 @@ class RandomCountryViewController: UIViewController {
         alert.addAction(UIAlertAction(title: Strings.GamePrep.okButton.rawValue, style: .default, handler: { [weak self] _ in
             self?.loadCountries()
         }))
-        gameButton.setTitle(Strings.GamePrep.buttonTitleReload.rawValue, for: .normal)
-        gameButton.isEnabled = true
         self.present(alert, animated: true)
-    }
-
-    @IBAction func gameButtonTap() {
-        if viewModel.isReady {
-            do {
-                let countryViewModel = try viewModel.selectRandom(with: DependencyContainer.shared.makeImageLoader(dataLoader: self.dataLoader))
-                performSegue(withIdentifier: "ShowCountry", sender: countryViewModel)
-            } catch {
-                showError(with: Strings.GamePrep.alertMessageNoCountry.rawValue)
-            }
-
-        } else {
-            loadCountries()
-        }
     }
 
     // MARK: - Navigation

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AdjacencyList <T: Hashable>: Graph {
+final class AdjacencyList <T: Hashable>: Graph {
     private var adjacencies: [Vertex<T>: [Edge<T>]] = [:]
 
     init() {}
@@ -28,11 +28,11 @@ class AdjacencyList <T: Hashable>: Graph {
     }
 
     func edges(from source: Vertex<T>) -> [Edge<T>] {
-        return adjacencies[source] ?? []
+        adjacencies[source] ?? []
     }
 
     func vertexes() -> [Vertex<T>] {
-        return Array(adjacencies.keys)
+        Array(adjacencies.keys)
     }
 
     func randomElement() -> (Vertex<T>, [Edge<T>])? {
@@ -40,6 +40,6 @@ class AdjacencyList <T: Hashable>: Graph {
     }
 
     func isEmpty() -> Bool {
-        return adjacencies.isEmpty
+        adjacencies.isEmpty
     }
 }
